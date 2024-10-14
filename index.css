@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/*Variables*/
+:root {
+    --main-color: #721736;
+    --second-color: #ccb9bc;
+    --details: #F08080;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+}
+.bg-black {
+    background-color: #177232 !important; /* Custom dark red color */
+}
+
+iframe{
+    width: 100%;
+    height: 100vh;
+
+}
+
+.navbar-brand{
+     font-size: 28px;
+}
+
+.nav-link{
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    color: #fff !important;
+}
+
+.navbar-toggler{
+    outline: none !important;
+}
+
+.bg-black{
+    background-color: var(--main-color);
+}
+.button-74 {
+    background-color: #fbeee0;
+    background-image: linear-gradient(to bottom, #fbeee0, #f2d2b1);
+    border: 2px solid #422800;
+    border-radius: 20px;
+    box-shadow: #422800 4px 4px 0px 0px;
+    color: #422800;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0 10px;
+    line-height: 35px;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: all 0.2s ease;
+    margin: 0  10px;
+    
+}
+
+.button-74:hover {
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, #fff, #f0d5b9);
+    box-shadow: #422800 6px 6px 0px 0px;
+}
+
+.button-74:active {
+    box-shadow: #422800 2px 2px 0px 0px;
+    transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+    .button-74 {
+        min-width: 80px;
+        padding: 0 15px;
+    }
+}
+
+
+.fab{
+    color: #DAA520;
+    font-size: 3rem;
+    padding: .8rem;
+    transition: .5s;
+  }
+  
+.fab:hover {
+      transform: translateY(-10px);
+}
+
+/*Products*/
+#products{
+    background-color: #111;
+}
+
+.product-title{
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.single-item{
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 1px 5px #fff, 0 1px 1px #fff;
+    position: relative;
+    transition-duration: 0.3s;
+    transition-property: transform;
+    cursor: pointer;
+}
+
+.single-item:hover,
+.single-item:focus,
+.single-item:active{
+    transform: translateY(-5px);
+}
+
+.single-item:hover:before,
+.single-item:focus:hover,
+.single-item:active:before{
+    opacity: 1;
+    transform: translateY(5px);
+}
+
+.img-container{
+    position: relative;
+    cursor: pointer;
+}
+
+.img-fruts{
+    height: 231px;
+}
+
+.img-container:before{
+    display: inline-block;
+    vertical-align: middle;
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px #111;
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+}
+
+.img-container:hover,
+.product-img:focus,
+.product-img:active{
+    box-shadow: -1px 0px 4px 1px rgba(247, 243, 243, 0.9);
+    transform: scale(1.1);
+}
+
+span {
+    color: var(--details);
+    font-weight: 700;
+}
+
+
+/* CSS */
+.button-56 {
+    align-items: center;
+    background-color: #fdd9b3;
+    ;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 14px; 
+    height: 40px; 
+    justify-content: center;
+    line-height: 20px;
+    max-width: 100%;
+    padding: 0 15px; 
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+
+.button-56:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 40px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform 0.2s ease-out;
+    z-index: -1;
+}
+
+.button-56:hover:after {
+    transform: translate(0, 0);
+}
+
+.button-56:active {
+    background-color: #ffdeda;
+    outline: 0;
+}
+
+.button-56:hover {
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .button-56 {
+        padding: 0 30px;
+    }
+}
+
+/*Blog*/
+#blog-sec{
+    margin-top: 25px;
+}
+
+.text-color{
+    color: #000;
+}
+
+.flower-about{
+    margin-top: 35px;
+    animation-name: imgLeft;
+    animation-duration: 3s;
+}
+
+.about-text{
+    animation-name: textRight;
+    animation-duration: 3s;
+}
+
+@keyframes imgLeft {
+    0%{
+        transform: translateX(-120px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes textRight{
+    0%{
+        transform: translateX(30px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/*Best Seller*/
+.seller{
+    background-color: #111;
+    color: #fff;
+    margin-top: 30px;
+    box-shadow: 0 1px 5px #fff, 0 1px 1px #fff;
+}
+
+.img-top{
+    margin-top: 10px;
+}
+
+.seller-item{
+    text-align: right;
+    font-size: 20px;
+}
+
+.seller-item p{
+    position: absolute;
+    right: 30px;
+    left: 30px;
+    padding: 10px 0;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    bottom: 30px;
+    line-height: 1.5;
+    transform: translate3d(0, 100%, 0);
+}
+
+.seller-item:hover p{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+.photo{
+    height: 800px;
+}
+
+.seller-img{
+    height: 380px;
+    width: 100%;
+    margin-bottom: 1px;
+}
+
+
+
+
+/* CSS */
+.button-87 {
+    margin: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: black;
+    border-radius: 8px;
+    display: block;
+    border: 0px;
+    font-weight: 700;
+    font-size: 14px; 
+    box-shadow: 0px 0px 14px -7px #9b0909;
+    background-image: linear-gradient(45deg, #f0d5b9 0%, #f4b97a 31%, #ff8558 100%);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    z-index: 1;
+    max-width: 150px;
+    width: 100%;
+    margin-left: 70%;
+  }
+  
+  .button-87:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .button-87:active {
+    transform: scale(0.95);
+  }
+  /*Contact*/
+  @keyframes cont-btn {
+    16% { transform: translateY(8px); }
+    33% { transform: translateY(-6px); }
+    50% { transform: translateY(4px); }
+    65% { transform: translateY(-2px); }
+    85% { transform: translateY(-1px); }
+    100% { transform: translateY(0); }
+}
+
+.cont-btn:hover,
+.cont-btn:focus,
+.cont-btn:active {
+    animation-name: cont-btn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.iframe-map {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 250px; 
+}
+
+@media (min-width: 992px) {
+    .iframe-map {
+        height: 400px; 
+        margin-left: 10%; 
+    }
+}
+
+  
+  
+/*Footer*/
+.social-section {
+    background-image: url("https://themewagon.github.io/alazea/img/bg-img/3.jpg");
+    color: #fff;
+    background-color: #177232;
+    background-size: cover;
+    background-blend-mode: overlay; 
+    padding: 50px 0; 
+}
+
+.social-icon{
+    transition: transform 0.4s ease-out;
+    padding: .8rem;
+    color: rgb(241, 88, 139);
+}
+
+.social-icon:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+/*Media*/
+@media (min-width: 768px) {
+.flower-about{
+    margin-bottom: 35px;
+}
+   
+.product-title{
+    margin-bottom: 35px;
+}
+
+.seller-item{
+    font-size: 18px;
+}
+}
+
+@media (min-width: 425px) {
+.flower-about{
+    margin-bottom: 35px;
+}
+        
+.photo, .seller-img {
+    margin-bottom: 20px;
+}
+
+.social-icon{
+font-size: 40px;
+}
+}
+
+@media (min-width: 375px){
+.flower-about{
+    margin-bottom: 30px;
+}
+                
+.photo, .seller-img {
+    margin-bottom: 20px;
+}
+        
+.social-icon{
+    font-size: 35px;
+}
+}
+
+@media (min-width: 320px) {
+.flower-about{
+    margin-bottom: 30px;
+}                
+
+.photo, .seller-img {
+    margin-bottom: 20px;
+}
+            
+.social-icon{
+    font-size: 30px;
+}
+}
+
+::-webkit-scrollbar {
+    width: 12px; 
+}
+
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    background-color: #4CAF50;
+    border-radius: 10px; 
+    border: 3px solid #ffffff;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #55ff00;
+}
